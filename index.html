@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="wrapper">
+        <h2>Oh No! Its empty.. Add a book!</h2>
+         <section id="cardBox"></section>
+         <button id="addBtn" class="bookAdd">Add a book</button>
+    </section>
+
+
+ <!--Add to list Form (Position Absolute) -->
+    <form id="addForm" class="formy" onsubmit="return false">
+        <legend>Add a book!</legend>
+        <input id="title" type="text" placeholder="Title of book:" required>
+        <input id="author" type="text" placeholder="Who is the author?" required>
+        <input id="pages" type="text" placeholder="How many pages?" required>
+        <button id="subBtn" type="submit">Add to library</button>
+    </form>
+
+
+    
+</body>
+</html>
