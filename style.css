@@ -22,7 +22,7 @@ body{
 }
 .wrapper h2{
     position: absolute;
-    top: 410px;
+    top: 430px;
 }
 
 .bookAdd{
@@ -48,13 +48,16 @@ body{
     justify-content: center;
     align-items: center;
 
-    width: 400px;
+    width: 600px;
     z-index: 5;
 
     box-shadow: 0 0 30px black;
 }
 
 .cardMan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     background-color: antiquewhite;
     border-bottom: 1px solid black;
@@ -67,7 +70,7 @@ body{
 .formy{
     border: 1px solid black;
     border-radius: 15px;
-    background-color: rgb(255, 174, 0);
+    background-color: rgb(223, 170, 57);
     padding: 10px;
     position: absolute;
     gap: 5px;
@@ -77,6 +80,7 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 6;
+    box-shadow: 1px 10px 37px 0px rgba(0,0,0,0.75);
     height: 500px;
     width: 400px;
 }
@@ -107,4 +111,22 @@ body{
 .formy button:active{
     background-color: rgb(5, 177, 5);
     color: white;
+}
+
+
+.bookRemove{
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(160, 2, 2);
+    margin: 5px;
+
+}
+
+.bookRemove:hover{
+    background-color: rgb(167, 4, 4);
+}
+
+.bookRemove:active{
+    background-color: red;
 }
