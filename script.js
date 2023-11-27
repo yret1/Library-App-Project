@@ -8,15 +8,24 @@ let formToggle = document.getElementById("addForm");
 let bookID = 0;
 
 
-
-
-function Book(title,author,pages) {
-    this.title = title;
-    this.pages = pages;
-    this.author = author;
-    this.id = bookID
-    bookID++
+class Book {
+    constructor(title,author,pages) {
+        this.title = title;
+        this.pages = pages;
+        this.author = author;
+        this.id = bookID
+        bookID++
+    }
 }
+
+
+// function Book(title,author,pages) {
+//     this.title = title;
+//     this.pages = pages;
+//     this.author = author;
+//     this.id = bookID
+//     bookID++
+// }
 
 function addBookToLibrary(newBook){
     myLibrary.push(newBook);
